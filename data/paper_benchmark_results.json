@@ -1,0 +1,2078 @@
+{
+  "paper": {
+    "title": "Are Multilingual Models Improving? Revisiting Cross-Lingual Transfer",
+    "venue": "EMNLP 2026",
+    "arxiv": "https://arxiv.org/abs/2606.21954",
+    "project_page": "https://prasoon1207.github.io/hat_xlt"
+  },
+  "models": [
+    {
+      "id": "gemini-2.5-flash",
+      "name": "Gemini-2.5-Flash",
+      "family": "Gemini",
+      "cutoff": "2025-01"
+    },
+    {
+      "id": "gemini-2.5-flash-thinking-off",
+      "name": "Gemini-2.5-Flash (Thinking-Off)",
+      "family": "Gemini",
+      "cutoff": "2025-01"
+    },
+    {
+      "id": "gemini-3-flash",
+      "name": "Gemini-3-Flash",
+      "family": "Gemini",
+      "cutoff": "2025-01"
+    },
+    {
+      "id": "gemini-3-flash-low",
+      "name": "Gemini-3-Flash (Low)",
+      "family": "Gemini",
+      "cutoff": "2025-01"
+    },
+    {
+      "id": "gemini-3-flash-minimal",
+      "name": "Gemini-3-Flash (Minimal)",
+      "family": "Gemini",
+      "cutoff": "2025-01"
+    },
+    {
+      "id": "gemma-3-1b",
+      "name": "Gemma-3-1B",
+      "family": "Gemma 3",
+      "cutoff": "2024-08"
+    },
+    {
+      "id": "gemma-3-4b",
+      "name": "Gemma-3-4B",
+      "family": "Gemma 3",
+      "cutoff": "2024-08"
+    },
+    {
+      "id": "gemma-3-12b",
+      "name": "Gemma-3-12B",
+      "family": "Gemma 3",
+      "cutoff": "2024-08"
+    },
+    {
+      "id": "gemma-3-27b",
+      "name": "Gemma-3-27B",
+      "family": "Gemma 3",
+      "cutoff": "2024-08"
+    },
+    {
+      "id": "qwen-3-4b",
+      "name": "Qwen-3-4B",
+      "family": "Qwen 3",
+      "cutoff": "2024-11"
+    },
+    {
+      "id": "qwen-3-30b-a3b",
+      "name": "Qwen-3-30B-A3B",
+      "family": "Qwen 3",
+      "cutoff": "2024-11"
+    },
+    {
+      "id": "gpt-oss-20b",
+      "name": "GPT-OSS-20B",
+      "family": "GPT-OSS",
+      "cutoff": "2024-06"
+    },
+    {
+      "id": "gpt-oss-120b",
+      "name": "GPT-OSS-120B",
+      "family": "GPT-OSS",
+      "cutoff": "2024-06"
+    },
+    {
+      "id": "gemma-4-e2b-it",
+      "name": "Gemma-4-E2B-IT",
+      "family": "Gemma 4",
+      "cutoff": "2025-01"
+    },
+    {
+      "id": "gemma-4-e4b-it",
+      "name": "Gemma-4-E4B-IT",
+      "family": "Gemma 4",
+      "cutoff": "2025-01"
+    },
+    {
+      "id": "gemma-4-26b-a4b-it",
+      "name": "Gemma-4-26B-A4B-IT",
+      "family": "Gemma 4",
+      "cutoff": "2025-01"
+    },
+    {
+      "id": "gemma-4-31b-it",
+      "name": "Gemma-4-31B-IT",
+      "family": "Gemma 4",
+      "cutoff": "2025-01"
+    },
+    {
+      "id": "claude-haiku-4.5",
+      "name": "Claude-Haiku-4.5",
+      "family": "Claude",
+      "cutoff": "2025-02"
+    },
+    {
+      "id": "claude-sonnet-4.6",
+      "name": "Claude-Sonnet-4.6",
+      "family": "Claude",
+      "cutoff": "2025-05"
+    },
+    {
+      "id": "claude-opus-4.7",
+      "name": "Claude-Opus-4.7",
+      "family": "Claude",
+      "cutoff": "2026-01"
+    }
+  ],
+  "benchmarks": {
+    "eclektic": {
+      "gemini-2.5-flash": {
+        "source": {
+          "estimate": 50.9,
+          "ci_95": [
+            46.8,
+            55.0
+          ]
+        },
+        "target": {
+          "estimate": 44.5,
+          "ci_95": [
+            41.1,
+            48.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 6.4,
+          "ci_95": [
+            4.3,
+            8.5
+          ]
+        },
+        "transfer_score": {
+          "estimate": 66.0,
+          "ci_95": [
+            63.6,
+            68.4
+          ]
+        },
+        "hat": {
+          "estimate": 81.7,
+          "ci_95": [
+            78.6,
+            84.7
+          ]
+        }
+      },
+      "gemini-2.5-flash-thinking-off": {
+        "source": {
+          "estimate": 42.8,
+          "ci_95": [
+            38.8,
+            47.1
+          ]
+        },
+        "target": {
+          "estimate": 29.4,
+          "ci_95": [
+            26.5,
+            32.5
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 13.3,
+          "ci_95": [
+            10.5,
+            16.3
+          ]
+        },
+        "transfer_score": {
+          "estimate": 44.9,
+          "ci_95": [
+            42.5,
+            47.4
+          ]
+        },
+        "hat": {
+          "estimate": 60.4,
+          "ci_95": [
+            55.9,
+            64.8
+          ]
+        }
+      },
+      "gemini-3-flash": {
+        "source": {
+          "estimate": 68.4,
+          "ci_95": [
+            64.1,
+            72.5
+          ]
+        },
+        "target": {
+          "estimate": 60.5,
+          "ci_95": [
+            56.8,
+            64.3
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 8.0,
+          "ci_95": [
+            5.6,
+            10.4
+          ]
+        },
+        "transfer_score": {
+          "estimate": 78.0,
+          "ci_95": [
+            76.5,
+            79.6
+          ]
+        },
+        "hat": {
+          "estimate": 84.6,
+          "ci_95": [
+            82.1,
+            87.1
+          ]
+        }
+      },
+      "gemini-3-flash-low": {
+        "source": {
+          "estimate": 69.1,
+          "ci_95": [
+            65.0,
+            73.2
+          ]
+        },
+        "target": {
+          "estimate": 60.2,
+          "ci_95": [
+            56.5,
+            64.0
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 8.9,
+          "ci_95": [
+            6.5,
+            11.2
+          ]
+        },
+        "transfer_score": {
+          "estimate": 76.2,
+          "ci_95": [
+            74.5,
+            77.9
+          ]
+        },
+        "hat": {
+          "estimate": 84.0,
+          "ci_95": [
+            81.6,
+            86.7
+          ]
+        }
+      },
+      "gemini-3-flash-minimal": {
+        "source": {
+          "estimate": 65.7,
+          "ci_95": [
+            61.4,
+            69.8
+          ]
+        },
+        "target": {
+          "estimate": 52.3,
+          "ci_95": [
+            48.9,
+            56.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 13.4,
+          "ci_95": [
+            10.2,
+            16.3
+          ]
+        },
+        "transfer_score": {
+          "estimate": 68.0,
+          "ci_95": [
+            66.1,
+            69.7
+          ]
+        },
+        "hat": {
+          "estimate": 74.2,
+          "ci_95": [
+            70.9,
+            77.5
+          ]
+        }
+      },
+      "gemma-3-1b": {
+        "source": {
+          "estimate": 5.4,
+          "ci_95": [
+            3.7,
+            7.7
+          ]
+        },
+        "target": {
+          "estimate": 4.6,
+          "ci_95": [
+            3.5,
+            6.0
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 0.8,
+          "ci_95": [
+            -0.3,
+            2.2
+          ]
+        },
+        "transfer_score": {
+          "estimate": 32.1,
+          "ci_95": [
+            26.3,
+            38.0
+          ]
+        },
+        "hat": {
+          "estimate": 48.2,
+          "ci_95": [
+            34.9,
+            61.0
+          ]
+        }
+      },
+      "gemma-3-4b": {
+        "source": {
+          "estimate": 11.5,
+          "ci_95": [
+            8.9,
+            14.6
+          ]
+        },
+        "target": {
+          "estimate": 9.6,
+          "ci_95": [
+            7.7,
+            11.8
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 1.9,
+          "ci_95": [
+            0.3,
+            4.0
+          ]
+        },
+        "transfer_score": {
+          "estimate": 45.8,
+          "ci_95": [
+            41.4,
+            50.6
+          ]
+        },
+        "hat": {
+          "estimate": 56.4,
+          "ci_95": [
+            47.0,
+            65.9
+          ]
+        }
+      },
+      "gemma-3-12b": {
+        "source": {
+          "estimate": 17.3,
+          "ci_95": [
+            14.0,
+            20.7
+          ]
+        },
+        "target": {
+          "estimate": 15.2,
+          "ci_95": [
+            12.8,
+            17.9
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 2.1,
+          "ci_95": [
+            -0.2,
+            4.3
+          ]
+        },
+        "transfer_score": {
+          "estimate": 56.2,
+          "ci_95": [
+            51.8,
+            60.5
+          ]
+        },
+        "hat": {
+          "estimate": 64.1,
+          "ci_95": [
+            56.8,
+            71.4
+          ]
+        }
+      },
+      "gemma-3-27b": {
+        "source": {
+          "estimate": 26.4,
+          "ci_95": [
+            22.2,
+            30.4
+          ]
+        },
+        "target": {
+          "estimate": 19.8,
+          "ci_95": [
+            17.2,
+            23.0
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 6.5,
+          "ci_95": [
+            4.1,
+            8.9
+          ]
+        },
+        "transfer_score": {
+          "estimate": 58.8,
+          "ci_95": [
+            55.1,
+            62.4
+          ]
+        },
+        "hat": {
+          "estimate": 63.8,
+          "ci_95": [
+            58.4,
+            69.6
+          ]
+        }
+      },
+      "qwen-3-4b": {
+        "source": {
+          "estimate": 13.8,
+          "ci_95": [
+            10.8,
+            16.9
+          ]
+        },
+        "target": {
+          "estimate": 10.8,
+          "ci_95": [
+            8.9,
+            13.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 2.9,
+          "ci_95": [
+            1.1,
+            5.1
+          ]
+        },
+        "transfer_score": {
+          "estimate": 38.8,
+          "ci_95": [
+            34.3,
+            43.1
+          ]
+        },
+        "hat": {
+          "estimate": 56.5,
+          "ci_95": [
+            47.8,
+            64.9
+          ]
+        }
+      },
+      "qwen-3-30b-a3b": {
+        "source": {
+          "estimate": 19.4,
+          "ci_95": [
+            16.2,
+            23.0
+          ]
+        },
+        "target": {
+          "estimate": 16.6,
+          "ci_95": [
+            14.1,
+            19.5
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 2.8,
+          "ci_95": [
+            0.7,
+            5.1
+          ]
+        },
+        "transfer_score": {
+          "estimate": 48.9,
+          "ci_95": [
+            45.3,
+            52.8
+          ]
+        },
+        "hat": {
+          "estimate": 65.9,
+          "ci_95": [
+            59.7,
+            72.6
+          ]
+        }
+      },
+      "gpt-oss-20b": {
+        "source": {
+          "estimate": 19.7,
+          "ci_95": [
+            16.5,
+            23.1
+          ]
+        },
+        "target": {
+          "estimate": 18.0,
+          "ci_95": [
+            15.3,
+            21.2
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 1.6,
+          "ci_95": [
+            0.2,
+            3.2
+          ]
+        },
+        "transfer_score": {
+          "estimate": 53.5,
+          "ci_95": [
+            49.4,
+            57.5
+          ]
+        },
+        "hat": {
+          "estimate": 80.1,
+          "ci_95": [
+            74.7,
+            85.3
+          ]
+        }
+      },
+      "gpt-oss-120b": {
+        "source": {
+          "estimate": 27.9,
+          "ci_95": [
+            24.3,
+            31.7
+          ]
+        },
+        "target": {
+          "estimate": 25.4,
+          "ci_95": [
+            22.4,
+            28.7
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 2.4,
+          "ci_95": [
+            0.6,
+            4.1
+          ]
+        },
+        "transfer_score": {
+          "estimate": 61.0,
+          "ci_95": [
+            58.0,
+            63.9
+          ]
+        },
+        "hat": {
+          "estimate": 82.2,
+          "ci_95": [
+            77.9,
+            86.1
+          ]
+        }
+      },
+      "gemma-4-e2b-it": {
+        "source": {
+          "estimate": 11.9,
+          "ci_95": [
+            9.1,
+            14.8
+          ]
+        },
+        "target": {
+          "estimate": 9.0,
+          "ci_95": [
+            7.2,
+            11.0
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 2.8,
+          "ci_95": [
+            0.9,
+            4.9
+          ]
+        },
+        "transfer_score": {
+          "estimate": 39.0,
+          "ci_95": [
+            35.0,
+            43.2
+          ]
+        },
+        "hat": {
+          "estimate": 51.8,
+          "ci_95": [
+            42.4,
+            61.3
+          ]
+        }
+      },
+      "gemma-4-e4b-it": {
+        "source": {
+          "estimate": 15.7,
+          "ci_95": [
+            12.7,
+            19.0
+          ]
+        },
+        "target": {
+          "estimate": 10.7,
+          "ci_95": [
+            8.7,
+            13.0
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 5.0,
+          "ci_95": [
+            3.1,
+            6.8
+          ]
+        },
+        "transfer_score": {
+          "estimate": 43.9,
+          "ci_95": [
+            40.0,
+            48.1
+          ]
+        },
+        "hat": {
+          "estimate": 58.4,
+          "ci_95": [
+            51.2,
+            65.7
+          ]
+        }
+      },
+      "gemma-4-26b-a4b-it": {
+        "source": {
+          "estimate": 26.0,
+          "ci_95": [
+            21.8,
+            29.8
+          ]
+        },
+        "target": {
+          "estimate": 20.3,
+          "ci_95": [
+            17.4,
+            23.3
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 5.7,
+          "ci_95": [
+            3.0,
+            8.3
+          ]
+        },
+        "transfer_score": {
+          "estimate": 55.2,
+          "ci_95": [
+            51.8,
+            58.8
+          ]
+        },
+        "hat": {
+          "estimate": 63.9,
+          "ci_95": [
+            57.9,
+            69.6
+          ]
+        }
+      },
+      "gemma-4-31b-it": {
+        "source": {
+          "estimate": 28.2,
+          "ci_95": [
+            23.8,
+            32.5
+          ]
+        },
+        "target": {
+          "estimate": 22.6,
+          "ci_95": [
+            19.5,
+            26.0
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 5.5,
+          "ci_95": [
+            3.1,
+            8.0
+          ]
+        },
+        "transfer_score": {
+          "estimate": 55.3,
+          "ci_95": [
+            51.9,
+            58.6
+          ]
+        },
+        "hat": {
+          "estimate": 68.6,
+          "ci_95": [
+            62.9,
+            74.1
+          ]
+        }
+      },
+      "claude-haiku-4.5": {
+        "source": {
+          "estimate": 29.3,
+          "ci_95": [
+            25.5,
+            33.7
+          ]
+        },
+        "target": {
+          "estimate": 20.8,
+          "ci_95": [
+            17.8,
+            23.9
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 8.4,
+          "ci_95": [
+            5.9,
+            11.3
+          ]
+        },
+        "transfer_score": {
+          "estimate": 51.1,
+          "ci_95": [
+            48.2,
+            54.3
+          ]
+        },
+        "hat": {
+          "estimate": 59.8,
+          "ci_95": [
+            53.8,
+            65.7
+          ]
+        }
+      },
+      "claude-sonnet-4.6": {
+        "source": {
+          "estimate": 52.9,
+          "ci_95": [
+            48.0,
+            57.8
+          ]
+        },
+        "target": {
+          "estimate": 44.1,
+          "ci_95": [
+            40.2,
+            48.0
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 8.7,
+          "ci_95": [
+            5.6,
+            11.5
+          ]
+        },
+        "transfer_score": {
+          "estimate": 70.0,
+          "ci_95": [
+            67.9,
+            72.2
+          ]
+        },
+        "hat": {
+          "estimate": 74.7,
+          "ci_95": [
+            70.9,
+            78.5
+          ]
+        }
+      },
+      "claude-opus-4.7": {
+        "source": {
+          "estimate": 55.6,
+          "ci_95": [
+            50.6,
+            60.0
+          ]
+        },
+        "target": {
+          "estimate": 45.2,
+          "ci_95": [
+            41.6,
+            49.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 10.3,
+          "ci_95": [
+            7.4,
+            13.5
+          ]
+        },
+        "transfer_score": {
+          "estimate": 67.0,
+          "ci_95": [
+            64.9,
+            69.1
+          ]
+        },
+        "hat": {
+          "estimate": 73.5,
+          "ci_95": [
+            69.7,
+            77.2
+          ]
+        }
+      }
+    },
+    "mmlu_prox_lite": {
+      "gemini-2.5-flash": {
+        "source": {
+          "estimate": 72.0,
+          "ci_95": [
+            69.0,
+            75.2
+          ]
+        },
+        "target": {
+          "estimate": 73.4,
+          "ci_95": [
+            73.3,
+            75.5
+          ]
+        },
+        "xlt_gap": {
+          "estimate": -1.9,
+          "ci_95": [
+            -3.4,
+            -0.5
+          ]
+        },
+        "hat": {
+          "estimate": 97.5,
+          "ci_95": [
+            96.2,
+            98.8
+          ]
+        }
+      },
+      "gemini-2.5-flash-thinking-off": {
+        "source": {
+          "estimate": 67.5,
+          "ci_95": [
+            64.2,
+            70.8
+          ]
+        },
+        "target": {
+          "estimate": 61.6,
+          "ci_95": [
+            60.1,
+            62.2
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 5.9,
+          "ci_95": [
+            4.5,
+            7.4
+          ]
+        },
+        "hat": {
+          "estimate": 88.9,
+          "ci_95": [
+            87.1,
+            90.3
+          ]
+        }
+      },
+      "gemini-3-flash": {
+        "source": {
+          "estimate": 80.8,
+          "ci_95": [
+            78.3,
+            83.3
+          ]
+        },
+        "target": {
+          "estimate": 82.1,
+          "ci_95": [
+            81.6,
+            82.6
+          ]
+        },
+        "xlt_gap": {
+          "estimate": -1.4,
+          "ci_95": [
+            -2.6,
+            -0.3
+          ]
+        },
+        "hat": {
+          "estimate": 98.8,
+          "ci_95": [
+            97.8,
+            99.9
+          ]
+        }
+      },
+      "gemini-3-flash-low": {
+        "source": {
+          "estimate": 82.2,
+          "ci_95": [
+            79.6,
+            84.9
+          ]
+        },
+        "target": {
+          "estimate": 83.0,
+          "ci_95": [
+            82.5,
+            83.5
+          ]
+        },
+        "xlt_gap": {
+          "estimate": -0.8,
+          "ci_95": [
+            -2.0,
+            0.4
+          ]
+        },
+        "hat": {
+          "estimate": 98.3,
+          "ci_95": [
+            97.3,
+            99.3
+          ]
+        }
+      },
+      "gemini-3-flash-minimal": {
+        "source": {
+          "estimate": 80.4,
+          "ci_95": [
+            77.4,
+            83.3
+          ]
+        },
+        "target": {
+          "estimate": 77.2,
+          "ci_95": [
+            76.6,
+            77.8
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 3.2,
+          "ci_95": [
+            1.9,
+            4.6
+          ]
+        },
+        "hat": {
+          "estimate": 93.5,
+          "ci_95": [
+            92.1,
+            94.8
+          ]
+        }
+      },
+      "gemma-3-1b": {
+        "source": {
+          "estimate": 17.0,
+          "ci_95": [
+            14.1,
+            19.9
+          ]
+        },
+        "target": {
+          "estimate": 14.2,
+          "ci_95": [
+            13.7,
+            14.7
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 2.7,
+          "ci_95": [
+            0.8,
+            4.7
+          ]
+        },
+        "hat": {
+          "estimate": 58.4,
+          "ci_95": [
+            52.3,
+            64.1
+          ]
+        }
+      },
+      "gemma-3-4b": {
+        "source": {
+          "estimate": 28.2,
+          "ci_95": [
+            24.7,
+            31.7
+          ]
+        },
+        "target": {
+          "estimate": 24.6,
+          "ci_95": [
+            23.9,
+            25.2
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 3.6,
+          "ci_95": [
+            1.5,
+            5.6
+          ]
+        },
+        "hat": {
+          "estimate": 67.5,
+          "ci_95": [
+            63.1,
+            71.7
+          ]
+        }
+      },
+      "gemma-3-12b": {
+        "source": {
+          "estimate": 42.0,
+          "ci_95": [
+            38.1,
+            45.8
+          ]
+        },
+        "target": {
+          "estimate": 34.9,
+          "ci_95": [
+            34.3,
+            35.6
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 7.0,
+          "ci_95": [
+            4.7,
+            9.2
+          ]
+        },
+        "hat": {
+          "estimate": 71.6,
+          "ci_95": [
+            68.2,
+            74.7
+          ]
+        }
+      },
+      "gemma-3-27b": {
+        "source": {
+          "estimate": 45.7,
+          "ci_95": [
+            41.8,
+            49.7
+          ]
+        },
+        "target": {
+          "estimate": 39.4,
+          "ci_95": [
+            38.6,
+            40.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 6.4,
+          "ci_95": [
+            4.3,
+            8.2
+          ]
+        },
+        "hat": {
+          "estimate": 77.2,
+          "ci_95": [
+            74.4,
+            80.1
+          ]
+        }
+      },
+      "qwen-3-4b": {
+        "source": {
+          "estimate": 40.8,
+          "ci_95": [
+            37.0,
+            44.5
+          ]
+        },
+        "target": {
+          "estimate": 32.7,
+          "ci_95": [
+            32.0,
+            33.4
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 8.1,
+          "ci_95": [
+            6.0,
+            10.3
+          ]
+        },
+        "hat": {
+          "estimate": 69.3,
+          "ci_95": [
+            65.8,
+            72.6
+          ]
+        }
+      },
+      "qwen-3-30b-a3b": {
+        "source": {
+          "estimate": 53.9,
+          "ci_95": [
+            50.2,
+            57.6
+          ]
+        },
+        "target": {
+          "estimate": 43.4,
+          "ci_95": [
+            42.7,
+            44.2
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 10.5,
+          "ci_95": [
+            8.5,
+            12.4
+          ]
+        },
+        "hat": {
+          "estimate": 74.8,
+          "ci_95": [
+            71.9,
+            77.6
+          ]
+        }
+      },
+      "gpt-oss-20b": {
+        "source": {
+          "estimate": 74.0,
+          "ci_95": [
+            71.0,
+            77.2
+          ]
+        },
+        "target": {
+          "estimate": 66.3,
+          "ci_95": [
+            65.7,
+            66.9
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 7.7,
+          "ci_95": [
+            6.5,
+            9.0
+          ]
+        },
+        "hat": {
+          "estimate": 88.9,
+          "ci_95": [
+            87.6,
+            90.3
+          ]
+        }
+      },
+      "gpt-oss-120b": {
+        "source": {
+          "estimate": 79.0,
+          "ci_95": [
+            76.0,
+            81.8
+          ]
+        },
+        "target": {
+          "estimate": 72.3,
+          "ci_95": [
+            71.8,
+            73.0
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 6.6,
+          "ci_95": [
+            5.4,
+            8.0
+          ]
+        },
+        "hat": {
+          "estimate": 90.6,
+          "ci_95": [
+            89.2,
+            92.0
+          ]
+        }
+      },
+      "gemma-4-e2b-it": {
+        "source": {
+          "estimate": 31.8,
+          "ci_95": [
+            28.5,
+            35.5
+          ]
+        },
+        "target": {
+          "estimate": 26.1,
+          "ci_95": [
+            25.5,
+            26.7
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 5.7,
+          "ci_95": [
+            3.2,
+            8.6
+          ]
+        },
+        "hat": {
+          "estimate": 59.3,
+          "ci_95": [
+            54.7,
+            63.5
+          ]
+        }
+      },
+      "gemma-4-e4b-it": {
+        "source": {
+          "estimate": 42.9,
+          "ci_95": [
+            39.0,
+            46.6
+          ]
+        },
+        "target": {
+          "estimate": 35.8,
+          "ci_95": [
+            35.2,
+            36.5
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 7.1,
+          "ci_95": [
+            5.1,
+            9.0
+          ]
+        },
+        "hat": {
+          "estimate": 74.8,
+          "ci_95": [
+            71.6,
+            77.8
+          ]
+        }
+      },
+      "gemma-4-26b-a4b-it": {
+        "source": {
+          "estimate": 53.6,
+          "ci_95": [
+            49.9,
+            57.5
+          ]
+        },
+        "target": {
+          "estimate": 48.7,
+          "ci_95": [
+            48.0,
+            49.5
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 4.8,
+          "ci_95": [
+            2.6,
+            7.2
+          ]
+        },
+        "hat": {
+          "estimate": 78.7,
+          "ci_95": [
+            76.2,
+            81.1
+          ]
+        }
+      },
+      "gemma-4-31b-it": {
+        "source": {
+          "estimate": 64.1,
+          "ci_95": [
+            60.4,
+            67.5
+          ]
+        },
+        "target": {
+          "estimate": 59.4,
+          "ci_95": [
+            58.6,
+            60.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 4.8,
+          "ci_95": [
+            2.9,
+            6.8
+          ]
+        },
+        "hat": {
+          "estimate": 84.7,
+          "ci_95": [
+            82.5,
+            86.7
+          ]
+        }
+      },
+      "claude-haiku-4.5": {
+        "source": {
+          "estimate": 45.2,
+          "ci_95": [
+            41.4,
+            49.1
+          ]
+        },
+        "target": {
+          "estimate": 44.6,
+          "ci_95": [
+            43.9,
+            45.3
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 0.6,
+          "ci_95": [
+            -1.9,
+            3.1
+          ]
+        },
+        "hat": {
+          "estimate": 76.5,
+          "ci_95": [
+            73.5,
+            79.2
+          ]
+        }
+      },
+      "claude-sonnet-4.6": {
+        "source": {
+          "estimate": 66.8,
+          "ci_95": [
+            63.0,
+            70.7
+          ]
+        },
+        "target": {
+          "estimate": 59.5,
+          "ci_95": [
+            58.7,
+            60.2
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 7.4,
+          "ci_95": [
+            5.7,
+            9.0
+          ]
+        },
+        "hat": {
+          "estimate": 85.4,
+          "ci_95": [
+            83.6,
+            87.3
+          ]
+        }
+      },
+      "claude-opus-4.7": {
+        "source": {
+          "estimate": 82.5,
+          "ci_95": [
+            79.6,
+            85.2
+          ]
+        },
+        "target": {
+          "estimate": 76.7,
+          "ci_95": [
+            76.2,
+            77.5
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 5.8,
+          "ci_95": [
+            3.8,
+            7.3
+          ]
+        },
+        "hat": {
+          "estimate": 89.3,
+          "ci_95": [
+            87.8,
+            90.9
+          ]
+        }
+      }
+    },
+    "mgsmv2": {
+      "gemini-2.5-flash": {
+        "source": {
+          "estimate": 99.5,
+          "ci_95": [
+            99.0,
+            99.9
+          ]
+        },
+        "target": {
+          "estimate": 98.2,
+          "ci_95": [
+            97.7,
+            98.6
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 1.3,
+          "ci_95": [
+            0.8,
+            1.9
+          ]
+        },
+        "hat": {
+          "estimate": 98.7,
+          "ci_95": [
+            98.1,
+            99.2
+          ]
+        }
+      },
+      "gemini-2.5-flash-thinking-off": {
+        "source": {
+          "estimate": 58.4,
+          "ci_95": [
+            52.6,
+            64.0
+          ]
+        },
+        "target": {
+          "estimate": 55.6,
+          "ci_95": [
+            53.9,
+            57.5
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 2.8,
+          "ci_95": [
+            -0.1,
+            5.4
+          ]
+        },
+        "hat": {
+          "estimate": 89.8,
+          "ci_95": [
+            86.9,
+            92.4
+          ]
+        }
+      },
+      "gemini-3-flash": {
+        "source": {
+          "estimate": 99.8,
+          "ci_95": [
+            99.4,
+            100.0
+          ]
+        },
+        "target": {
+          "estimate": 99.3,
+          "ci_95": [
+            99.1,
+            99.6
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 0.4,
+          "ci_95": [
+            0.1,
+            0.8
+          ]
+        },
+        "hat": {
+          "estimate": 99.6,
+          "ci_95": [
+            99.3,
+            99.9
+          ]
+        }
+      },
+      "gemini-3-flash-low": {
+        "source": {
+          "estimate": 99.9,
+          "ci_95": [
+            99.8,
+            100.0
+          ]
+        },
+        "target": {
+          "estimate": 99.4,
+          "ci_95": [
+            99.2,
+            99.6
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 0.5,
+          "ci_95": [
+            0.2,
+            1.0
+          ]
+        },
+        "hat": {
+          "estimate": 99.5,
+          "ci_95": [
+            99.1,
+            99.8
+          ]
+        }
+      },
+      "gemini-3-flash-minimal": {
+        "source": {
+          "estimate": 86.9,
+          "ci_95": [
+            83.2,
+            90.6
+          ]
+        },
+        "target": {
+          "estimate": 86.5,
+          "ci_95": [
+            85.4,
+            87.7
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 0.4,
+          "ci_95": [
+            -1.8,
+            2.5
+          ]
+        },
+        "hat": {
+          "estimate": 96.2,
+          "ci_95": [
+            94.8,
+            97.5
+          ]
+        }
+      },
+      "gemma-3-1b": {
+        "source": {
+          "estimate": 50.7,
+          "ci_95": [
+            45.9,
+            55.6
+          ]
+        },
+        "target": {
+          "estimate": 25.9,
+          "ci_95": [
+            24.6,
+            27.4
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 24.7,
+          "ci_95": [
+            21.3,
+            28.3
+          ]
+        },
+        "hat": {
+          "estimate": 47.7,
+          "ci_95": [
+            43.7,
+            51.8
+          ]
+        }
+      },
+      "gemma-3-4b": {
+        "source": {
+          "estimate": 86.3,
+          "ci_95": [
+            82.6,
+            89.6
+          ]
+        },
+        "target": {
+          "estimate": 72.9,
+          "ci_95": [
+            71.5,
+            74.3
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 13.4,
+          "ci_95": [
+            10.8,
+            15.9
+          ]
+        },
+        "hat": {
+          "estimate": 82.6,
+          "ci_95": [
+            80.3,
+            85.0
+          ]
+        }
+      },
+      "gemma-3-12b": {
+        "source": {
+          "estimate": 96.0,
+          "ci_95": [
+            93.7,
+            97.8
+          ]
+        },
+        "target": {
+          "estimate": 88.1,
+          "ci_95": [
+            87.1,
+            89.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 7.9,
+          "ci_95": [
+            6.3,
+            9.7
+          ]
+        },
+        "hat": {
+          "estimate": 91.3,
+          "ci_95": [
+            89.7,
+            92.8
+          ]
+        }
+      },
+      "gemma-3-27b": {
+        "source": {
+          "estimate": 97.4,
+          "ci_95": [
+            95.6,
+            98.9
+          ]
+        },
+        "target": {
+          "estimate": 93.3,
+          "ci_95": [
+            92.6,
+            94.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 4.1,
+          "ci_95": [
+            2.7,
+            5.4
+          ]
+        },
+        "hat": {
+          "estimate": 95.3,
+          "ci_95": [
+            94.0,
+            96.5
+          ]
+        }
+      },
+      "qwen-3-4b": {
+        "source": {
+          "estimate": 97.4,
+          "ci_95": [
+            95.9,
+            98.7
+          ]
+        },
+        "target": {
+          "estimate": 79.4,
+          "ci_95": [
+            77.9,
+            80.8
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 18.1,
+          "ci_95": [
+            16.2,
+            20.1
+          ]
+        },
+        "hat": {
+          "estimate": 81.3,
+          "ci_95": [
+            79.4,
+            83.2
+          ]
+        }
+      },
+      "qwen-3-30b-a3b": {
+        "source": {
+          "estimate": 98.4,
+          "ci_95": [
+            97.0,
+            99.5
+          ]
+        },
+        "target": {
+          "estimate": 88.6,
+          "ci_95": [
+            87.6,
+            89.6
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 9.8,
+          "ci_95": [
+            8.2,
+            11.4
+          ]
+        },
+        "hat": {
+          "estimate": 89.8,
+          "ci_95": [
+            88.4,
+            91.3
+          ]
+        }
+      },
+      "gpt-oss-20b": {
+        "source": {
+          "estimate": 99.0,
+          "ci_95": [
+            98.3,
+            99.6
+          ]
+        },
+        "target": {
+          "estimate": 95.2,
+          "ci_95": [
+            94.6,
+            95.8
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 3.8,
+          "ci_95": [
+            3.0,
+            4.6
+          ]
+        },
+        "hat": {
+          "estimate": 96.1,
+          "ci_95": [
+            95.4,
+            96.9
+          ]
+        }
+      },
+      "gpt-oss-120b": {
+        "source": {
+          "estimate": 99.6,
+          "ci_95": [
+            98.7,
+            100.0
+          ]
+        },
+        "target": {
+          "estimate": 97.0,
+          "ci_95": [
+            96.4,
+            97.5
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 2.6,
+          "ci_95": [
+            2.0,
+            3.2
+          ]
+        },
+        "hat": {
+          "estimate": 97.4,
+          "ci_95": [
+            96.8,
+            98.0
+          ]
+        }
+      },
+      "gemma-4-e2b-it": {
+        "source": {
+          "estimate": 18.0,
+          "ci_95": [
+            13.8,
+            22.3
+          ]
+        },
+        "target": {
+          "estimate": 13.0,
+          "ci_95": [
+            11.9,
+            14.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 5.0,
+          "ci_95": [
+            2.2,
+            8.0
+          ]
+        },
+        "hat": {
+          "estimate": 53.7,
+          "ci_95": [
+            45.1,
+            62.6
+          ]
+        }
+      },
+      "gemma-4-e4b-it": {
+        "source": {
+          "estimate": 21.9,
+          "ci_95": [
+            17.5,
+            26.6
+          ]
+        },
+        "target": {
+          "estimate": 17.5,
+          "ci_95": [
+            16.3,
+            18.8
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 4.4,
+          "ci_95": [
+            2.3,
+            6.8
+          ]
+        },
+        "hat": {
+          "estimate": 68.0,
+          "ci_95": [
+            60.3,
+            74.1
+          ]
+        }
+      },
+      "gemma-4-26b-a4b-it": {
+        "source": {
+          "estimate": 99.5,
+          "ci_95": [
+            98.6,
+            100.0
+          ]
+        },
+        "target": {
+          "estimate": 96.5,
+          "ci_95": [
+            95.9,
+            97.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 3.0,
+          "ci_95": [
+            1.9,
+            4.2
+          ]
+        },
+        "hat": {
+          "estimate": 96.8,
+          "ci_95": [
+            95.7,
+            97.7
+          ]
+        }
+      },
+      "gemma-4-31b-it": {
+        "source": {
+          "estimate": 99.6,
+          "ci_95": [
+            99.0,
+            100.0
+          ]
+        },
+        "target": {
+          "estimate": 98.3,
+          "ci_95": [
+            97.8,
+            98.6
+          ]
+        },
+        "xlt_gap": {
+          "estimate": 1.4,
+          "ci_95": [
+            0.6,
+            2.1
+          ]
+        },
+        "hat": {
+          "estimate": 98.4,
+          "ci_95": [
+            97.8,
+            99.0
+          ]
+        }
+      },
+      "claude-haiku-4.5": {
+        "source": {
+          "estimate": 52.8,
+          "ci_95": [
+            46.4,
+            58.5
+          ]
+        },
+        "target": {
+          "estimate": 54.0,
+          "ci_95": [
+            52.3,
+            55.9
+          ]
+        },
+        "xlt_gap": {
+          "estimate": -1.3,
+          "ci_95": [
+            -4.4,
+            2.2
+          ]
+        },
+        "hat": {
+          "estimate": 86.0,
+          "ci_95": [
+            82.1,
+            89.6
+          ]
+        }
+      },
+      "claude-sonnet-4.6": {
+        "source": {
+          "estimate": 96.1,
+          "ci_95": [
+            93.7,
+            98.2
+          ]
+        },
+        "target": {
+          "estimate": 98.7,
+          "ci_95": [
+            98.3,
+            99.1
+          ]
+        },
+        "xlt_gap": {
+          "estimate": -2.6,
+          "ci_95": [
+            -4.9,
+            -0.5
+          ]
+        },
+        "hat": {
+          "estimate": 99.4,
+          "ci_95": [
+            98.7,
+            100.0
+          ]
+        }
+      },
+      "claude-opus-4.7": {
+        "source": {
+          "estimate": 89.4,
+          "ci_95": [
+            85.6,
+            92.9
+          ]
+        },
+        "target": {
+          "estimate": 90.4,
+          "ci_95": [
+            89.4,
+            91.5
+          ]
+        },
+        "xlt_gap": {
+          "estimate": -1.0,
+          "ci_95": [
+            -2.8,
+            1.1
+          ]
+        },
+        "hat": {
+          "estimate": 97.3,
+          "ci_95": [
+            96.0,
+            98.4
+          ]
+        }
+      }
+    }
+  }
+}
